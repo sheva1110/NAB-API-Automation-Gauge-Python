@@ -1,10 +1,18 @@
 from pathlib import Path
+import os
 
 
 class Const:
     # Project Structure
-    URL = "https://openweathermap.org/data/2.5"
-    APP_ID = "439d4b804bc8187953eb36d2a8c26a02"
+    TEST_ENV = os.getenv("gauge_environment").lower()
+    APP_ID = "NGZiZjQ3YmNmOWFjYzY4NzhhNjEwYzllOWNlNDI2Njg="
     PROJECT_ROOT = str(Path(__file__).parent.parent.parent)
     CONFIG_FILE = PROJECT_ROOT + "/config/config.properties"
-    DATA_INPUT_FILE = PROJECT_ROOT + "/data/%s.properties"
+
+    # Define environment URL
+    if (TEST_ENV == "staging"):
+        URL = "api-stg.openweathermap.org"
+    elif (TEST_ENV == "qa"):
+        URL = "api-qa.openweathermap.org"
+    else:
+        URL = "api.openweathermap.org"

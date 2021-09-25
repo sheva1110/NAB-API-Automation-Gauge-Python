@@ -61,3 +61,17 @@ class AssertUtil:
                            "\t\t\t\t   Expect: '%s'\n"
                            "\t\t\t\t   Actual: '%s'" % (log, result, expected_value, actual_value))
         assert result
+
+    @staticmethod
+    def soft_assert_equal(field, actual, expect):
+        try:
+            result = actual == expect
+            log_rs = "OK" if result else "FAILED"
+            log = "   [%s] %s: %s" % (log_rs, field, expect)
+            if result:
+                logger.info(log)
+            else:
+                logger.warn(log + " (actual: '%s')" % actual)
+            assert result
+        except Exception as ex:
+            pass

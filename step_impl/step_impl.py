@@ -20,10 +20,7 @@ def before_suite_hook():
 
 @before_spec()
 def before_spec_hook(context: ExecutionContext):
-    test_case_id = str(context.specification.name).split(":")[0]
-    input_file_name = Const.DATA_INPUT_FILE % test_case_id
-    data_input = FileUtil.read_properties_file(input_file_name)
-    data_store.spec.data_input = DataInfoInput(data_input)
+    pass
 
 
 @before_scenario()
