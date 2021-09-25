@@ -1,6 +1,6 @@
+from src.const.const import Const
 from getgauge.python import data_store, ExecutionContext, before_suite, before_spec, \
     before_scenario, before_step, after_spec, after_suite, after_step
-from src.consts.consts import Consts
 from src.obj.data_info_input import DataInfoInput
 from src.utils.file_util import FileUtil
 
@@ -12,7 +12,7 @@ from src.utils.file_util import FileUtil
 
 @before_suite
 def before_suite_hook():
-    config = FileUtil.read_properties_file(Consts.CONFIG_FILE)
+    config = FileUtil.read_properties_file(Const.CONFIG_FILE)
 
     # Add Gauge suite variables
     data_store.suite.is_debug = config["debug"]
@@ -21,7 +21,7 @@ def before_suite_hook():
 @before_spec()
 def before_spec_hook(context: ExecutionContext):
     test_case_id = str(context.specification.name).split(":")[0]
-    input_file_name = Consts.DATA_INPUT_FILE % test_case_id
+    input_file_name = Const.DATA_INPUT_FILE % test_case_id
     data_input = FileUtil.read_properties_file(input_file_name)
     data_store.spec.data_input = DataInfoInput(data_input)
 
