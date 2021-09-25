@@ -1,1 +1,5 @@
 getgauge
+requests
+requests-toolbelt
+colorlog
+geopy
