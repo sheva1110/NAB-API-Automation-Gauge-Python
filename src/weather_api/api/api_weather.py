@@ -14,10 +14,10 @@ class ApiWeather:
     __api_key = StringUtil.decrypt(Const.APP_ID) 
     __headers = {}
 
-    def search_weather(self, city):
+    def search_weather(self, keyword):
         url = Const.URL + ApiWeatherList.Weather
         params = {
-            'q': city,
+            'q': keyword,
             'appid': self.__api_key
         }
         return RequestUtil.get(url, self.__headers, params)

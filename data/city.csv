@@ -1,6 +1,6 @@
-id,city
-1,London
-2,Paris
-3,New York
-4,Rome
-5,Madrid
+id,city,country
+1,London,UK
+2,Paris,FR
+3,New York,US
+4,Rome,IT
+5,Madrid,ES
