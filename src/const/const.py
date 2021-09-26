@@ -11,8 +11,8 @@ class Const:
 
     # Define environment URL
     if (TEST_ENV == "staging"):
-        URL = "api-stg.openweathermap.org"
+        URL = "https://api-stg.openweathermap.org/data/2.5"
     elif (TEST_ENV == "qa"):
-        URL = "api-qa.openweathermap.org"
+        URL = "https://api-qa.openweathermap.org/data/2.5"
     else:
-        URL = "api.openweathermap.org"
+        URL = "https://api.openweathermap.org/data/2.5"

@@ -1,43 +1,43 @@
 WEATHER_RES_SCHEMA = {
-        "coord": {
-            "lon": {'type': 'float'},
-            "lat": {'type': 'float'}
+        'coord': {
+            'lon': {'type': 'number'},
+            'lat': {'type': 'number'}
         },
-        "weather": [
+        'weather': [
             {
-                "id": {'type': 'integer'},
-                "main": {'type': 'string'},
-                "description": {'type': 'string'},
-                "icon": {'type': 'string'}
+                'id': {'type': 'number'},
+                'main': {'type': 'string'},
+                'description': {'type': 'string'},
+                'icon': {'type': 'string'}
             }
         ],
-        "base": {'type': 'string'},
-        "main": {
-            "temp": {'type': 'float'},
-            "feels_like": {'type': 'float'},
-            "temp_min": {'type': 'float'},
-            "temp_max": {'type': 'float'},
-            "pressure": {'type': 'float'},
-            "humidity": {'type': 'float'}
+        'base': {'type': 'string'},
+        'main': {
+            'temp': {'type': 'number'},
+            'feels_like': {'type': 'number'},
+            'temp_min': {'type': 'number'},
+            'temp_max': {'type': 'number'},
+            'pressure': {'type': 'number'},
+            'humidity': {'type': 'number'}
         },
-        "visibility": {'type': 'float'},
-        "wind": {
-            "speed": {'type': 'float'},
-            "deg": {'type': 'float'}
+        'visibility': {'type': 'number'},
+        'wind': {
+            'speed': {'type': 'number'},
+            'deg': {'type': 'number'}
         },
-        "clouds": {
-            "all": {'type': 'float'}
+        'clouds': {
+            'all': {'type': 'number'}
         },
-        "dt": {'type': 'float'},
-        "sys": {
-            "type": {'type': 'float'},
-            "id": {'type': 'integer'},
-            "country": {'type': 'string'},
-            "sunrise": {'type': 'float'},
-            "sunset": {'type': 'float'}
+        'dt': {'type': 'number'},
+        'sys': {
+            'type': {'type': 'number'},
+            'id': {'type': 'number'},
+            'country': {'type': 'string'},
+            'sunrise': {'type': 'number'},
+            'sunset': {'type': 'number'}
         },
-        "timezone": {'type': 'float'},
-        "id": {'type': 'integer'},
-        "name": {'type': 'string'},
-        "cod": {'type': 'integer'}
+        'timezone': {'type': 'number'},
+        'id': {'type': 'number'},
+        'name': {'type': 'string'},
+        'cod': {'type': 'number'}
     }

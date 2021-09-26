@@ -21,8 +21,8 @@ class TestWeather:
                 logger.info(api + ": OK")
             else:
                 logger.info(api + ": Failed")
-                logger.debug(json_data)
+
         except Exception as ex:
             logger.debug(api, False)
             logger.warning(ex)
-        return self
+        return json_data
