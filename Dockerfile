@@ -11,10 +11,10 @@ RUN apt-get update
 RUN apt-get install gauge
 
 # Copy source to container
-RUN mkdir nab-api-automation
-RUN cd nab-api-automation
-WORKDIR /nab-api-automation
-COPY . /nab-api-automation
+RUN mkdir api-automation
+RUN cd api-automation
+WORKDIR /api-automation
+COPY . /api-automation
 
 # Install required python libraries with a quiet flag
 RUN pip install -r requirements.txt -q

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'Start run NAB API automation testing'
+                sh 'Start run API automation testing'
                 gauge run specs -v
             }
         }
