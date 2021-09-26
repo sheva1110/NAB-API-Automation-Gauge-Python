@@ -17,18 +17,16 @@ def search_weather_city_country(city, country):
 
 @step("Verify return status code <status_code>")
 def verify_city(status_code):
-    logger.info("Verify return status code")
+    logger.info("Verify return status code: " + status_code)
     func_verify_weather_status_code(status_code)
 
 
 @step("Verify city <city> in weather response result")
 def verify_city(city):
-    logger.info("Verify city name in Response")
     func_verify_city_in_weather_result(city)
 
 @step("Verify country code <country> in weather response result")
 def verify_country(country):
-    logger.info("Verify country code in Response")
     func_verify_country_code_in_weather_result(country)
 
 @step("Verify that weather forecast results are not displayed")
@@ -39,6 +37,5 @@ def verify_country():
 
 @step("Verify weather response schema API")
 def verify_api_schema():
-    logger.info("Verify weather response schema API")
     func_verify_weather_response_schema()
 
