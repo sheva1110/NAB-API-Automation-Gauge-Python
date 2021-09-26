@@ -22,6 +22,8 @@ Check your GAUGE_PYTHON_COMMAND at env/default/python.properties follow:
    window: python
    MACOS or Linux: python3
 
+## Test Approach: 
+/OpenWeather-API-Automation-Gauge-Python/OpenWeather Test Approach.xlsx
 
 ## How to run test case:
 
@@ -30,7 +32,13 @@ Check your GAUGE_PYTHON_COMMAND at env/default/python.properties follow:
     ```shell script
        gauge run specs -v
     ```
-
+    
+* Currently, we support 3 environments to execute: qa, staging, production (default):
+    ```shell script
+       gauge run specs -e qa -v
+       gauge run specs -e staging -v
+       gauge run specs -v
+    ```
 
 ## Project structure:
 
