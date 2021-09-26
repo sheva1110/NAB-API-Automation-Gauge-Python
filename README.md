@@ -3,9 +3,9 @@
 
 ## Prerequisites
 
-* Install Python 3.8 or higher.
-* Install Gauge on your machine to execute test case.
-    *__Gauge__ installed: (windows download file *.msi | MAC: brew install gauge)
+* Install Python 3.8 64-bit.
+* Install Gauge FW on your machine to execute test case.
+    *__Gauge__ installed
     (References: https://docs.gauge.org/getting_started/installing-gauge.html?os=macos&language=python&ide=vscode)
     
 
