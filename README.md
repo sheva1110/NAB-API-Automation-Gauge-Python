@@ -19,8 +19,11 @@
     ```
 
 Check your GAUGE_PYTHON_COMMAND at env/default/python.properties follow:
-   window: python
+
+   ```
+   Window: python
    MACOS or Linux: python3
+   ```
 
 ## Test Approach: 
 /OpenWeather-API-Automation-Gauge-Python/OpenWeather Test Approach.xlsx
