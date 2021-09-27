@@ -65,3 +65,4 @@ Check your GAUGE_PYTHON_COMMAND at env/default/python.properties follow:
 * Create Jenkins Pipeline and configure with git repository: https://github.com/sheva1110/OpenWeather-API-Automation-Gauge-Python.git
 * User docker file to build container from image "python:3.8" and set up libraries.
 * User Jenkins file to integrate with docker file to start run automation test.
+* Trigger run on Jenkins by Build now or schedule time.
